@@ -107,7 +107,7 @@ export default function BlackFridayCountdown() {
             </span>
             <div className="relative">
               <span
-                className="text-4xl md:text-8xl font-mono font-bold text-blue-400 tracking-wider"
+                className="text-6xl md:text-8xl font-mono font-bold text-blue-400 tracking-wider"
                 style={{
                   fontFamily: "monospace, Orbitron, monospace",
                   fontWeight: "900",
@@ -160,7 +160,7 @@ export default function BlackFridayCountdown() {
             </span>
             <div className="relative">
               <span
-                className="text-4xl md:text-8xl font-mono font-bold text-blue-400 tracking-wider"
+                className="text-6xl md:text-8xl font-mono font-bold text-blue-400 tracking-wider"
                 style={{
                   fontFamily: "monospace, Orbitron, monospace",
                   fontWeight: "900",
@@ -213,7 +213,7 @@ export default function BlackFridayCountdown() {
             </span>
             <div className="relative">
               <span
-                className="text-4xl md:text-8xl font-mono font-bold text-blue-400 tracking-wider"
+                className="text-6xl md:text-8xl font-mono font-bold text-blue-400 tracking-wider"
                 style={{
                   fontFamily: "monospace, Orbitron, monospace",
                   fontWeight: "900",
@@ -266,7 +266,7 @@ export default function BlackFridayCountdown() {
             </span>
             <div className="relative">
               <span
-                className="text-4xl md:text-8xl font-mono font-bold text-blue-400 tracking-wider"
+                className="text-6xl md:text-8xl font-mono font-bold text-blue-400 tracking-wider"
                 style={{
                   fontFamily: "monospace, Orbitron, monospace",
                   fontWeight: "900",
