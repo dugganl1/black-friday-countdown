@@ -58,7 +58,7 @@ export default function BlackFridayCountdown() {
 
   return (
     <div
-      className="min-h-screen bg-black text-white flex flex-col justify-center items-center px-0 md:px-0"
+      className="h-screen w-full overflow-hidden box-border bg-black text-white flex flex-col justify-between items-center px-4 md:px-0"
       style={{
         backgroundImage: `
           linear-gradient(rgba(255,255,255,0.10) 1px, transparent 1px),
@@ -89,8 +89,8 @@ export default function BlackFridayCountdown() {
       </div>
 
       {/* Countdown Timer */}
-      <div className="flex-1 flex items-center justify-center">
-        <div className="flex items-center justify-center gap-2 md:gap-4">
+      <div className="w-full flex justify-center items-center px-4">
+        <div className="flex items-center justify-center gap-2 md:gap-4 w-full max-w-[500px] md:max-w-[700px] overflow-hidden min-w-0">
           {/* Days */}
           <div className="flex flex-col items-center">
             <span

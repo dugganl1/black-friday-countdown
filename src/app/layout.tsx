@@ -104,7 +104,7 @@ export default function RootLayout({
         {/* Favicon */}
         <link rel="icon" href="/favicon.png" />
       </head>
-      <body className={inter.className}>
+      <body className={inter.className + ' overflow-hidden'}>
         {children}
       </body>
     </html>
