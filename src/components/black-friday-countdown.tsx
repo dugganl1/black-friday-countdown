@@ -68,9 +68,9 @@ export default function BlackFridayCountdown() {
       }}
     >
       {/* Header Section */}
-      <div className="flex-1 flex flex-col justify-center items-center text-center max-w-4xl">
+      <div className="flex-1 flex flex-col justify-center items-center text-center max-w-4xl px-4">
         <h1
-          className="text-3xl md:text-5xl font-bold text-white mb-5 leading-tight"
+          className="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-3 md:mb-5 leading-tight"
           style={{
             textShadow: "0 0 3px #B3D9FF",
           }}
@@ -78,7 +78,7 @@ export default function BlackFridayCountdown() {
           When is Black Friday 2025?
         </h1>
         <p
-          className="text-base md:text-lg leading-relaxed"
+          className="text-sm sm:text-base md:text-lg leading-relaxed"
           style={{
             color: "#F0F8FF",
             textShadow: "0 0 2px #6BB6FF",
@@ -89,31 +89,29 @@ export default function BlackFridayCountdown() {
       </div>
 
       {/* Countdown Timer */}
-      <div className="w-full flex justify-center items-center px-4">
-        <div className="flex items-center justify-center gap-2 md:gap-4 w-full max-w-[500px] md:max-w-[700px] overflow-hidden min-w-0">
+      <div className="w-full flex justify-center items-center px-2">
+        <div className="flex items-end justify-center gap-1 sm:gap-2 md:gap-3 w-full max-w-[380px] sm:max-w-[520px] md:max-w-[700px] overflow-hidden min-w-0">
           {/* Days */}
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center" style={{ minWidth: '80px' }}>
             <span
-              className="text-sm md:text-lg font-bold mb-2 md:mb-4 tracking-widest"
+              className="text-xs sm:text-sm md:text-lg font-bold mb-1 sm:mb-2 md:mb-4 tracking-widest"
               style={{
                 fontFamily: "Orbitron, monospace",
                 fontWeight: "900",
                 color: "#00B8E6",
                 textShadow: "0 0 1px #00D4FF",
-                letterSpacing: "2px",
+                letterSpacing: "1px",
               }}
             >
               DAYS
             </span>
-            <div className="relative">
+            <div className="relative w-full">
               <span
-                className="text-6xl md:text-8xl font-mono font-bold text-blue-400 tracking-wider"
+                className="text-4xl sm:text-5xl md:text-8xl font-mono font-bold text-blue-400 tracking-wider block"
                 style={{
                   fontFamily: "monospace, Orbitron, monospace",
                   fontWeight: "900",
                   letterSpacing: "0px",
-                  minWidth: "3ch",
-                  display: "inline-block",
                   textAlign: "center",
                   textShadow: `
     0 0 3px #00D4FF,
@@ -127,46 +125,46 @@ export default function BlackFridayCountdown() {
                   backgroundClip: "text",
                 }}
               >
-                {timeLeft.days.toString().padStart(3, "0")}
+                {timeLeft.days}
               </span>
             </div>
           </div>
 
           {/* Separator */}
-          <span
-            className="text-3xl md:text-7xl text-blue-400 font-bold mx-0.5 md:mx-1 self-end mb-1 md:mb-2"
-            style={{
-              textShadow: "0 0 5px #00D4FF, 0 0 8px #00D4FF",
-              fontFamily: "Orbitron, monospace",
-              fontWeight: "900",
-            }}
-          >
-            :
-          </span>
+          <div className="flex items-end">
+            <span
+              className="text-3xl sm:text-4xl md:text-7xl text-blue-400 font-bold mb-0 md:mb-2"
+              style={{
+                textShadow: "0 0 5px #00D4FF, 0 0 8px #00D4FF",
+                fontFamily: "Orbitron, monospace",
+                fontWeight: "900",
+              }}
+            >
+              :
+            </span>
+          </div>
 
           {/* Hours */}
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center" style={{ minWidth: '60px' }}>
             <span
-              className="text-sm md:text-lg font-bold mb-2 md:mb-4 tracking-widest"
+              className="text-xs sm:text-sm md:text-lg font-bold mb-1 sm:mb-2 md:mb-4 tracking-widest"
               style={{
                 fontFamily: "Orbitron, monospace",
                 fontWeight: "900",
                 color: "#00B8E6",
                 textShadow: "0 0 1px #00D4FF",
-                letterSpacing: "2px",
+                letterSpacing: "1px",
               }}
             >
               HRS
             </span>
-            <div className="relative">
+            <div className="relative w-full">
               <span
-                className="text-6xl md:text-8xl font-mono font-bold text-blue-400 tracking-wider"
+                className="text-4xl sm:text-5xl md:text-8xl font-mono font-bold text-blue-400 tracking-wider block"
                 style={{
                   fontFamily: "monospace, Orbitron, monospace",
                   fontWeight: "900",
                   letterSpacing: "0px",
-                  minWidth: "2ch",
-                  display: "inline-block",
                   textAlign: "center",
                   textShadow: `
     0 0 3px #00D4FF,
@@ -186,40 +184,40 @@ export default function BlackFridayCountdown() {
           </div>
 
           {/* Separator */}
-          <span
-            className="text-3xl md:text-7xl text-blue-400 font-bold mx-0.5 md:mx-1 self-end mb-1 md:mb-2"
-            style={{
-              textShadow: "0 0 5px #00D4FF, 0 0 8px #00D4FF",
-              fontFamily: "Orbitron, monospace",
-              fontWeight: "900",
-            }}
-          >
-            :
-          </span>
+          <div className="flex items-end">
+            <span
+              className="text-3xl sm:text-4xl md:text-7xl text-blue-400 font-bold mb-0 md:mb-2"
+              style={{
+                textShadow: "0 0 5px #00D4FF, 0 0 8px #00D4FF",
+                fontFamily: "Orbitron, monospace",
+                fontWeight: "900",
+              }}
+            >
+              :
+            </span>
+          </div>
 
           {/* Minutes */}
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center" style={{ minWidth: '60px' }}>
             <span
-              className="text-sm md:text-lg font-bold mb-2 md:mb-4 tracking-widest"
+              className="text-xs sm:text-sm md:text-lg font-bold mb-1 sm:mb-2 md:mb-4 tracking-widest"
               style={{
                 fontFamily: "Orbitron, monospace",
                 fontWeight: "900",
                 color: "#00B8E6",
                 textShadow: "0 0 1px #00D4FF",
-                letterSpacing: "2px",
+                letterSpacing: "1px",
               }}
             >
               MIN
             </span>
-            <div className="relative">
+            <div className="relative w-full">
               <span
-                className="text-6xl md:text-8xl font-mono font-bold text-blue-400 tracking-wider"
+                className="text-4xl sm:text-5xl md:text-8xl font-mono font-bold text-blue-400 tracking-wider block"
                 style={{
                   fontFamily: "monospace, Orbitron, monospace",
                   fontWeight: "900",
                   letterSpacing: "0px",
-                  minWidth: "2ch",
-                  display: "inline-block",
                   textAlign: "center",
                   textShadow: `
     0 0 3px #00D4FF,
@@ -239,40 +237,40 @@ export default function BlackFridayCountdown() {
           </div>
 
           {/* Separator */}
-          <span
-            className="text-3xl md:text-7xl text-blue-400 font-bold mx-0.5 md:mx-1 self-end mb-1 md:mb-2"
-            style={{
-              textShadow: "0 0 5px #00D4FF, 0 0 8px #00D4FF",
-              fontFamily: "Orbitron, monospace",
-              fontWeight: "900",
-            }}
-          >
-            :
-          </span>
+          <div className="flex items-end">
+            <span
+              className="text-3xl sm:text-4xl md:text-7xl text-blue-400 font-bold mb-0 md:mb-2"
+              style={{
+                textShadow: "0 0 5px #00D4FF, 0 0 8px #00D4FF",
+                fontFamily: "Orbitron, monospace",
+                fontWeight: "900",
+              }}
+            >
+              :
+            </span>
+          </div>
 
           {/* Seconds */}
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center" style={{ minWidth: '60px' }}>
             <span
-              className="text-sm md:text-lg font-bold mb-2 md:mb-4 tracking-widest"
+              className="text-xs sm:text-sm md:text-lg font-bold mb-1 sm:mb-2 md:mb-4 tracking-widest"
               style={{
                 fontFamily: "Orbitron, monospace",
                 fontWeight: "900",
                 color: "#00B8E6",
                 textShadow: "0 0 1px #00D4FF",
-                letterSpacing: "2px",
+                letterSpacing: "1px",
               }}
             >
               SEC
             </span>
-            <div className="relative">
+            <div className="relative w-full">
               <span
-                className="text-6xl md:text-8xl font-mono font-bold text-blue-400 tracking-wider"
+                className="text-4xl sm:text-5xl md:text-8xl font-mono font-bold text-blue-400 tracking-wider block"
                 style={{
                   fontFamily: "monospace, Orbitron, monospace",
                   fontWeight: "900",
                   letterSpacing: "0px",
-                  minWidth: "2ch",
-                  display: "inline-block",
                   textAlign: "center",
                   textShadow: `
     0 0 3px #00D4FF,
@@ -294,9 +292,9 @@ export default function BlackFridayCountdown() {
       </div>
 
       {/* Footer Section */}
-      <div className="flex-1 flex items-center justify-center">
+      <div className="flex-1 flex items-center justify-center px-4">
         <p
-          className="text-sm md:text-base text-gray-400 text-center leading-relaxed"
+          className="text-xs sm:text-sm md:text-base text-gray-400 text-center leading-relaxed"
           style={{
             textShadow: "0 0 1px #4A90E2",
           }}
