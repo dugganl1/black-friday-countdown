@@ -61,8 +61,8 @@ export default function BlackFridayCountdown() {
       className="min-h-screen bg-black text-white flex flex-col justify-center items-center px-0 md:px-0"
       style={{
         backgroundImage: `
-          linear-gradient(rgba(26, 42, 46, 0.15) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(26, 42, 46, 0.15) 1px, transparent 1px)
+          linear-gradient(rgba(255,255,255,0.10) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255,255,255,0.10) 1px, transparent 1px)
         `,
         backgroundSize: "100px 100px",
       }}
